@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru" class="nejilie">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<title></title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="slick/slick.css" />
+	<link rel="stylesheet" href="slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" />
+	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="popup_overlay" onclick="popup_out();"></div>
+	<div class="popup" id="request">
+		<div class="popup_close" onclick="popup_out();"></div>
+		<div class="popup_h1">заявка на звонок</div>
+		<form>
+			<div class="descr">Ваше имя</div>
+			<input type="text" class="name">
+			<div class="descr">Ваш телефон</div>
+			<input type="text" class="phone">
+			<div class="descr">Комментарий</div>
+			<textarea></textarea>
+			<div class="btn">оставить заявку</div>
+		</form>
+	</div>
+	<header>
+		<a href="index.html">
+			<img src="img/logo.png" height="102" width="236" alt="">
+		</a>
+		<div class="nav">
+			<ul class="main_menu">
+				<li>
+					<a href="about.html">о проекте</a>
+					<ul class="sub_menu">
+						<li class="show3"><a href="news.html">новости</a></li>
+						<li class="show2"><a href="documents.html">документы</a></li>
+						<li class="show1"><a href="uchast.html">участники</a></li>
+					</ul>
+				</li>
+				<li><a href="raspoloj.html">расположение</a></li>
+				<li><a href="">Генплан</a></li>
+				<li>
+					<a href="kvartiri.html">Квартиры</a>
+					<ul class="sub_menu">
+						<li class="show6"><a href="nejilie.html">нежилые помещения</a></li>
+						<li class="show5"><a href="parking.html">паркинг</a></li>
+					</ul>
+				</li>
+				<li class="hide6"><a href="nejilie.html">нежилые помещения</a></li>
+				<li class="hide5"><a href="parking.html">паркинг</a></li>
+				<li>
+					<a href="ipoteka.html">ипотека</a>
+					<ul class="sub_menu">
+						<li class="show4"><a href="vzaim.html">взаимозачет</a></li>
+					</ul>
+				</li>
+				<li class="hide4"><a href="vzaim.html">взаимозачет</a></li>
+				<li><a href="step.html">ход строительства</a></li>
+				<li class="hide3"><a href="news.html">новости</a></li>
+				<li class="hide2"><a href="documents.html">документы</a></li>
+				<li class="hide1"><a href="uchast.html">участники</a></li>
+				<li><a href="contacts.html">контакты</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content">
+		<div id="layer1">
+			<img src="img/list1-8.png" height="66" width="85" alt="">
+		</div>
+		<div id="layer2">
+			<img src="img/list1-1.png" height="231" width="170" alt="">
+		</div>
+		<div id="layer3">
+			<img src="img/list1-2.png" height="229" width="208" alt="">
+		</div>
+		<div id="layer4">
+			<img src="img/listo2.png" height="220" width="167" alt="">
+		</div>
+		<div class="title">квартиры в продаже</div>
+		<div class="main_block cl">
+			<div class="left">
+				<div class="slider_range">
+					<div class="slider1">
+						<input type="text" id="range1" value="" name="range" />
+						<em class="description">Этаж</em>
+					</div>
+					<div class="slider2">
+						<input type="text" id="range2" value="" name="range" />
+						<em class="description">комнатность</em>
+					</div>
+					<div class="slider3">
+						<input type="text" id="range3" value="" name="range" />
+						<em class="description">цена, млн. руб.</em>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="genplan"><a href="">смотреть генплан</a></div>
+				<div class="table scroll-pane mCustomScrollbar" data-mcs-theme="dark">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<thead>
+							<tr class="inactive" id="z_1">
+								<th data-sort="int"><div class="btn_sort down"></div><span>Секция</span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Этаж</span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Условный<br>№</span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>№<br>на этаже</span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Кол-во<br>комнат<br></span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Площадь,<br>м<sup>2</sup></span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Стоимость,<br>за м<sup>2</sup></span></th>
+								<th data-sort="int"><div class="btn_sort down"></div><span>Общая<br>стоимость, руб</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="z_2">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_3">
+								<td>2</td>
+								<td>2</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_4">
+								<td>3</td>
+								<td>3</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_5">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_6">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_7">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_8">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_9">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_10">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_11">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_12">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_13">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_14">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_15">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_16">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_17">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_18">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_19">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_20">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_21">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_22">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_23">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+							<tr id="z_24">
+								<td>1</td>
+								<td>1</td>
+								<td>9</td>
+								<td>1</td>
+								<td>17</td>
+								<td>68.28</td>
+								<td>89 000</td>
+								<td>54 643 040</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="cl">
+		<div class="f_logo">
+			<img src="img/ndv.jpg" height="49" width="98" alt="">
+		</div>
+		<div class="f_form">
+			<div class="number">
+				 <span>+7 (495) <big>988-44-22</big></span>
+			</div>
+			<div class="zayava" onclick="popup_req();">Оставить заявку</div>
+		</div>
+		<div class="f_price">
+			<em>Стоимость от </em><big>151 000</big><em> руб./ м<sup>2</sup></em>
+		</div>
+		<div class="f_price-hide">
+			Стоимость от<br>
+			<big>151 000</big>руб./ м<sup>2</sup>
+		</div>
+		<div class="f_timer-hide">
+			<span>повышение<br>цен через</span>
+			<big> 15 </big>
+			<span>дней</span>
+		</div>
+		<div class="f_timer">
+			<em>повышение цен через </em><big>15</big><em> дней</em>
+		</div>
+		<div class="f_news">
+			<div class="icon">Новости</div>
+			<span class="date">02/07/15</span>
+			<span class="name">Новый объем квартир В ЖК «Терлецкий парк»</span>
+			<p>
+				Комплекс «Терлецкий парк»,<br>расположенный на востоке Москвы..
+			</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.plaxmove.js"></script>
+	<script type="text/javascript" src="js/sort.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script type="text/javascript" src="js/slider_ui.js"></script>
+// 	<script>
+// 	$(document).ready(function() {
+// 		$('.irs-slider.from').mouseenter(function(event) {
+// 			$(this).siblings('.irs').find('.irs-from').addClass('hover')
+// 		}).mouseleave(function(event) {
+// 			$('.irs-slider.from').siblings('.irs').find('.irs-from').removeClass('hover')
+// 		});
+// 	});
+// 	$(document).ready(function() {
+// 	$('.irs-slider.to').mouseenter(function(event) {
+// 		$(this).siblings('.irs').find('.irs-to').addClass('hover')
+// 	}).mouseleave(function(event) {
+// 		$('.irs-slider.to').siblings('.irs').find('.irs-to').removeClass('hover')
+// 	});
+// });
+// 	</script>
+	<script>
+		$("#range3").ionRangeSlider({
+	        hide_min_max: true,
+	        min: 1,
+	        max: 3,
+	        from: 1,
+	        to: 3,
+	        type: 'double',
+	        step: 1
+	    });
+	</script>
+</body>
+</html>
