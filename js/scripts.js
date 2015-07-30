@@ -1,8 +1,6 @@
 $(document).ready(function() {
-	$('.irs-slider').mouseenter(function(event) {
-		console.log(event);
-		$(this).parent().find('.irs-from').addClass('hover');
-	});
+
+	
 	$('.pagination li').click(function(event) {
 		$('.pagination li').removeClass('active');
 		$(this).addClass('active');
@@ -60,6 +58,9 @@ $(document).ready(function() {
 		$('#layer7').plaxmove({ratioH:0.09,ratioV:0.09})
 		$('#layer8').plaxmove({ratioH:0.03,ratioV:0.03})
 	});
+	
+
+	
 });
 function preim() {
 	$('.popup_preim').show();

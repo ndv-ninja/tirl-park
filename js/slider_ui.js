@@ -17,4 +17,14 @@ $(function () {
         type: 'double',
         step: 1
     });
+	$('.irs-slider.from').mouseenter(function(event) {
+		$(this).parent().find('.irs-from').addClass('hover');
+	}).mouseleave(function() {
+		$('.irs-slider.from').removeClass('hover');
+	});
+	$('.irs-slider.to').mouseenter(function(event) {
+		$(this).parent().find('.irs-to').addClass('hover');
+	}).mouseleave(function() {
+		$('.irs-slider').removeClass('hover');
+	});
 });
