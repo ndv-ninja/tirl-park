@@ -19,12 +19,12 @@ $(function () {
     });
 	$('.irs-slider.from').mouseenter(function(event) {
 		$(this).parent().find('.irs-from').addClass('hover');
-	}).mouseleave(function() {
-		$('.irs-slider.from').removeClass('hover');
-	});
+	}).mouseleave(function(event) {
+        $('.irs-slider.from').parent().find('.irs-from').removeClass('hover');
+    });
 	$('.irs-slider.to').mouseenter(function(event) {
-		$(this).parent().find('.irs-to').addClass('hover');
-	}).mouseleave(function() {
-		$('.irs-slider').removeClass('hover');
-	});
+        $(this).parent().find('.irs-to').addClass('hover');
+    }).mouseleave(function(event) {
+        $('.irs-slider.to').parent().find('.irs-to').removeClass('hover');
+    });
 });
