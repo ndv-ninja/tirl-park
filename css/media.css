@@ -57,6 +57,7 @@
 	.lists_img {right: 10%; bottom: 3%;}
 	.news-single .right {width: 60%;}
 	.news-single .conts {width: 90%;}
+	.fon {width: 500px;}
 }
 @media screen and (max-width: 1024px) {
 	.about_block .scroll-pane {height: 55%;}
@@ -80,6 +81,7 @@
 	.korpus .lists {right: -40px; top: 69%;}
 	.lists_img {right: 11%;}
 	.step_kishki .title a {left: -113px;}
+	.fon {width: 500px;}
 }
 @media screen and (max-width: 1906px) {
 	header li.hide1 {display: none;}
