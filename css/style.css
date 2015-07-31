@@ -234,7 +234,7 @@ ul.sub_menu {
 	background: #fff;
 	text-align: left;
 	z-index: 9;
-	min-width: 192px;
+	min-width: 200px;
 }
 ul.sub_menu > li {
 	padding: 6px 9px;
