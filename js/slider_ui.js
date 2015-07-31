@@ -19,17 +19,4 @@ $(function () {
         step: 1,
         values_separator: ';'
     });
-	// $('.irs-slider.from').mouseenter(function(event) {
-	// 	$(this).parent().find('.irs-from').addClass('hover');
-	// }).mouseleave(function(event) {
- //        $('.irs-slider.from').parent().find('.irs-from').removeClass('hover');
- //    });
-	// $('.irs-slider.to').mouseenter(function(event) {
- //        $(this).parent().find('.irs-to').addClass('hover');
- //    }).mouseleave(function(event) {
- //        $('.irs-slider.to').parent().find('.irs-to').removeClass('hover');
- //    });
-    if ($('.irs-slider').hasClass('state_hover')) {
-        $('.state_hover').addClass('hover');
-    }
 });

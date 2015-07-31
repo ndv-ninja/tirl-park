@@ -2347,10 +2347,6 @@ footer div big {font-size: 30px;}
 }
 .f_timer-hide span {display: inline-block; vertical-align: middle;}
 .f_timer-hide big {display: inline-block; vertical-align: middle; margin-right: 5px; margin-left: 5px;}
-.irs-from.hover {
-	background: url(../img/rang_hover.png) center center no-repeat;
-	color: #fff;
-}
 .slider_range .irs-single {
 	background: url(../img/rang_big.png) center center no-repeat;
 	width: 109px;
