@@ -444,9 +444,9 @@ ul.sub_menu > li {
 	z-index: 1;
 }
 .lists > div {
-	transition: all 1s linear;
-	-webkit-transition: all 1s linear;
-	-moz-transition: all 1s linear;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
 }
 .lists > div > a {
 	width: 100%;
@@ -455,13 +455,13 @@ ul.sub_menu > li {
 	position: relative;
 }
 .lists .list1:hover {
-	right: -40px;
+	right: -80px;
 }
 .lists .list1:hover a > .descr {
 	background: url(../img/ico2_hover.png) center center no-repeat;
 }
 .lists .list2:hover {
-	right: -40px;
+	right: -60px;
 }
 .lists .list2:hover > .descr {
 	background: url(../img/ico1_hover.png) center center no-repeat;
