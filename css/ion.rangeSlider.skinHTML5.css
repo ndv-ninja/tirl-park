@@ -95,6 +95,10 @@
     height: 73px;
     background: url(../img/rang.png) center center no-repeat;
 }
+.irs-active {
+    background: url(../img/rang_hover.png) center center no-repeat;
+    color: #fff;
+}
 .irs-from.hover, .irs-to.hover {
     background: url(../img/rang_hover.png) center center no-repeat;
     color: #fff;
@@ -111,9 +115,11 @@
     display: block;
     min-width: 54px;
     height: 56px;
-    background: #92d11a;
 }
-
+.slider_range .irs-single-active {
+    background: url(../img/rang_big_hover.png) center center no-repeat;
+    color: #fff;
+}
 .irs-grid {
     height: 27px;
 }

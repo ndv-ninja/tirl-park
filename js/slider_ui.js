@@ -19,4 +19,23 @@ $(function () {
         step: 1,
         values_separator: ';'
     });
+    $(document).on('mouseenter','.irs-slider.from',function(){
+        $(this).parent().find('.irs-from').addClass('irs-active');
+        $(this).parent().find('.irs-single').addClass('irs-single-active');
+    });
+    $(document).on('mouseout','.irs-slider.from',function(){
+        $(this).parent().find('.irs-from').removeClass('irs-active');
+        $(this).parent().find('.irs-single').removeClass('irs-single-active');
+    });
+
+    $(document).on('mouseenter','.irs-slider.to',function(){
+        $(this).parent().find('.irs-to').addClass('irs-active');
+        $(this).parent().find('.irs-single').addClass('irs-single-active');
+    });
+
+    $(document).on('mouseout','.irs-slider.to',function(){
+        $(this).parent().find('.irs-to').removeClass('irs-active');
+        $(this).parent().find('.irs-single').removeClass('irs-single-active');
+    });
+
 });
