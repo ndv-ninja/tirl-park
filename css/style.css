@@ -623,8 +623,8 @@ ul.sub_menu > li {
 	bottom: 23%;
 	right: 0;
 	position: absolute;
-	width: 19%;
 }
+.lists_img img {width: 100%; height: auto; display: block; object-fit: cover;}
 #layer7 {
 	top: 50%;
 	left: 80%;
@@ -713,21 +713,27 @@ ul.sub_menu > li {
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 2px;
-	margin: 8% 0 0;
+	margin: 5% 0 0;
 }
 .vzaim .content .steps {
 	font-size: 0;
 	text-align: center;
-	margin: 7% 0 0;
+	margin: 6% 0 0;
 	position: relative;
 	z-index: 2;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	justify-content: space-around;
 }
 .vzaim .content .steps .step {
-	display: inline-block;
-	vertical-align: top;
 	text-align: left;
 	padding-top: 135px;
-	margin: 0 100px;
 }
 .vzaim .content .steps .step span {
 	font-weight: 700;
@@ -901,7 +907,7 @@ ul.sub_menu > li {
   vertical-align: middle;
   position: relative;
   margin-left: 5%;
-  height: 72.3%;
+  height: 90%;
 }
 .nejilie .main_block .right table {
 	width: 742px;
@@ -911,6 +917,7 @@ ul.sub_menu > li {
   background: rgba(121,166,0,0.6);
   vertical-align: middle;
   border: 1px solid #fff;
+  border-bottom: none;
 }
 .nejilie .main_block tr:first-child th span {
   display: block;
@@ -926,6 +933,7 @@ ul.sub_menu > li {
   line-height: 17px;
   color: #07203b;
   border: 1px solid #fff;
+  border-bottom: none;
 }
 .nejilie .main_block tr {
   cursor: pointer;
@@ -965,6 +973,20 @@ ul.sub_menu > li {
   position: absolute;
   bottom: 10px;
   left: 44%;
+}
+
+.nejilie .main_block tbody tr:hover td {
+  border-bottom: 1px solid #7a982d !important;
+  border-top: 1px solid #7a982d !important;
+}
+.nejilie .main_block tbody tr:hover td:first-of-type {
+  border-left: 1px solid #7a982d;
+}
+.nejilie .main_block tbody tr:hover td:last-of-type {
+  border-right: 1px solid #7a982d;
+}
+.nejilie .main_block tbody tr:hover {
+  border: 1px solid #7a982d;
 }
 .vibor tr.inactive .btn_sort.down {
   background: url(../pic/design/sort_down.png) center center no-repeat;
@@ -1326,7 +1348,7 @@ svg polyline {
 }
 .news .news_block {
 	position: absolute;
-	top: 23%;
+	top: 25%;
 	left: 20%;
 	overflow: hidden;
 	height: 61%;
@@ -1486,6 +1508,7 @@ svg polyline {
 }
 .contacts .office .scroll-pane {
 	height: 20%;
+	margin-top: 10px;
 }
 .contacts .offices .scroll-pane {
 	height: 37%;
@@ -1612,7 +1635,7 @@ svg polyline {
 	font-size: 0;
 	text-align: center;
 	width: 75%;
-	margin: 0 auto;
+	margin: 10px auto 0;
 	height: 65%;
 }
 .step_hod {
@@ -2125,8 +2148,8 @@ footer div big {font-size: 30px;}
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 15px 11.5px 0 11.5px;
-	border-color: #ffffff transparent transparent transparent;
+	border-width: 0 11.5px 15px 11.5px;
+	border-color: transparent transparent #ffffff transparent;
 }
 .accordion .item span.up:after {
 	content: '';
@@ -2136,8 +2159,8 @@ footer div big {font-size: 30px;}
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 11.5px 15px 11.5px;
-	border-color: transparent transparent #ffffff transparent;
+	border-width: 15px 11.5px 0 11.5px;
+	border-color: #ffffff transparent transparent transparent;
 }
 .accordion .item p {
 	font-family: 'Open Sans', sans-serif;
@@ -2327,4 +2350,12 @@ footer div big {font-size: 30px;}
 .irs-from.hover {
 	background: url(../img/rang_hover.png) center center no-repeat;
 	color: #fff;
+}
+.slider_range .irs-single {
+	background: url(../img/rang_big.png) center center no-repeat;
+	width: 109px;
+	height: 73px;
+	font-size: 2em;
+	color: #5a7b25;
+	font-weight: bold;
 }

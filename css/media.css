@@ -54,7 +54,7 @@
 	.steps_hods .mCustomScrollBox {padding: 0 !important;}
 	.steps_hods .mCSB_inside > .mCSB_container {margin: 0 !important;}
 	.korpus .lists {right: -40px; top: 69%;} 
-	.lists_img {right: 10%; bottom: 3%;}
+	.lists_img {right: 0%; bottom: 3%;}
 	.news-single .right {width: 60%;}
 	.news-single .conts {width: 90%;}
 	.fon {width: 500px;}
@@ -79,7 +79,7 @@
 	.steps_hods .mCustomScrollBox {padding: 0 !important;}
 	.steps_hods .mCSB_inside > .mCSB_container {margin: 0 !important;}
 	.korpus .lists {right: -40px; top: 69%;}
-	.lists_img {right: 11%;}
+	.lists_img {right: 0%;}
 	.step_kishki .title a {left: -113px;}
 	.fon {width: 500px;}
 }
@@ -132,4 +132,12 @@
 	.f_price {display: none;}
 	.f_timer-hide {display: block;}
 	.f_timer {display: none;}
+}
+@media screen and (min-width: 2500px) and (min-height: 950px) {
+	.about_block {margin: 10% 0 0 6%;}
+	.accordion .scroll-pane {height: 100%;}
+	.vzaim .content > .wrapp {padding-top: 5%;}
+	.ipoteka .content .title {margin-top: 5%;}
+	.nejilie .content .title {margin-top: 6%;}
+	.nejilie .main_block {top: 65%;}
 }
