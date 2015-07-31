@@ -86,9 +86,11 @@
 			<div class="center">Из центра</div>
 		</div>
 		<div class="genplan">
-			<div class="icon_gen">смотреть генплан</div>
+			<a class="fancybox" href="img/genplan.jpg">
+				<div class="icon_gen">смотреть генплан</div>
+			</a>
 		</div>
-		<div id="map" style="width: 100%; height: 100%;"><div>
+		<div id="map" style="width: 100%; height: 100%;"></div>
 		<div class="fon">
 			<div class="text office">
 				<div class="title">офис продаж</div>
@@ -182,7 +184,6 @@
 							<em><strong>E-mail:</strong>ndv@ndv.ru</em>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -227,6 +228,18 @@
 	<script type="text/javascript" src="js/map.js"></script>
 	<script type="text/javascript" src="js/mapmesto.js"></script>
 	<script type="text/javascript" src="js/jquery.plaxmove.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a.fancybox").fancybox({
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}	
+			});
+		});
+	</script>
 </body>
 </html>
