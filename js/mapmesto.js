@@ -11,7 +11,6 @@ function init () {
         controls: [],
 
       });
-      myMap.behaviors.disable('scrollZoom')
 
 
 var myGeoObjects = [];

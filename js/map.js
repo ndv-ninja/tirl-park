@@ -31,7 +31,6 @@ ymaps.ready(function()
                                 zoom: 12,
                                 controls: []
                         });
-                        myMap.behaviors.disable('scrollZoom')
 
             $('.select').click(function()
   {
