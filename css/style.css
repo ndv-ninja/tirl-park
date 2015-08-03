@@ -1013,6 +1013,21 @@ ul.sub_menu > li {
 	z-index: 2;
 	position: relative;
 }
+.nejilie .content .title span {
+	position: relative;
+	z-index: 1;
+}
+.nejilie .content .title:after {
+	content: '';
+	position: absolute;
+	width: 724px;
+	height: 225px;
+	background: url(../img/shadow_title.png) center center no-repeat;
+	top: -80px;
+	left: 50%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+}
 .nejilie div[id^="layer"] {
 	position: absolute;
 }
@@ -1618,12 +1633,29 @@ svg polyline {
 	z-index: 2;
 	position: relative;
 }
+.step .title span {
+	position: relative;
+	z-index: 2;
+}
+.step .title:after {
+	content: '';
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	width: 724px;
+	height: 225px;
+	background: url(../img/shadow_title.png) center center no-repeat; 
+}
 .steps_hods {
 	font-size: 0;
 	text-align: center;
 	width: 75%;
 	margin: 10px auto 0;
 	height: 65%;
+	position: relative;
+	z-index: 2;
 }
 .step_hod {
 	display: inline-block;
