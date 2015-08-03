@@ -46,7 +46,7 @@
 					</ul>
 				</li>
 				<li><a href="raspoloj.html">расположение</a></li>
-				<li><a href="">Генплан</a></li>
+				<li><a class="fancybox" href="img/genplan.jpg">Генплан</a></li>
 				<li>
 					<a href="kvartiri.html">Квартиры</a>
 					<ul class="sub_menu">
@@ -83,8 +83,8 @@
 		</div>
 		<div class="routes">
 			<span>Как проехать:</span>
-			<div class="mkad active">От МКАД</div>
-			<div class="center">Из центра</div>
+			<div class="mkad" data-coord-x="55.78609" data-coord-y="37.841855" data-rout="router">От МКАД</div>
+			<div class="center" data-coord-x="55.753514" data-coord-y="37.621202" data-rout="router">Из центра</div>
 		</div>
 		<div class="genplan">
 			<a class="fancybox" href="img/genplan.jpg">
@@ -214,7 +214,7 @@
 		<div class="f_timer">
 			<em>повышение цен через </em><big>15</big><em> дней</em>
 		</div>
-		<div class="f_news">
+		<div class="f_news" onclick="javascript:location.href='news.html'">
 			<div class="icon">Новости</div>
 			<span class="date">02/07/15</span>
 			<span class="name">Новый объем квартир В ЖК «Терлецкий парк»</span>

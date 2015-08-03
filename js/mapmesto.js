@@ -1,5 +1,6 @@
+var route = null;
+var to_coord = [55.761801,37.796598];
 ymaps.ready(function(){
-
     ymaps.ready(init);
 function init () {
 
@@ -242,17 +243,34 @@ var clusterIcons=[{
 clusterer.add(myGeoObjects);
 //myMap.geoObjects.add(clusterer);
 
-ymaps.route([[55.764349, 37.705674], 'Москва пер. солдатский 26']),ymaps.route([[55.751354,37.716328], 'Москва пер. солдатский 26']).then(
-   
- function (route) {
-        route.options.set({ strokeColor: 'ab40ca', strokeStyle: 'dot', opacity: 1 });
-        myMap.geoObjects.add(route);
-        var points = route.getWayPoints();
-    points.options.set('preset',{ iconLayout: 'twirl#redDotIcon' });
-    points.get(0).properties.set('balloonContent','м.Лефортово');},
-    function (error) { alert('Возникла ошибка: ' + error.message);}
-    );
-  ymaps.geoQuery(myGeoObjects).addToMap(myMap);
+$('.routes div').click(function()
+    {
+          $('.routes div').removeClass('current-route');
+          $(this).addClass('current-route');
+          var x = $(this).attr('data-coord-x');
+          var y = $(this).attr('data-coord-y');
+          var r = $(this).attr('data-rout');
+          
+        if (r == 'router'){
+          if(route) {myMap.geoObjects.remove(route);}
+          ymaps.route(
+            [
+              [x,y],
+              to_coord
+            ]).then(function (router)
+            {
+                
+                route = router;
+                myMap.geoObjects.add(router);
+                var points = route.getWayPoints(),
+                lastPoint = points.getLength() - 1;
+                points.get(0).options.set('visible', false);
+                points.get(1).options.set('visible', false);
+            }, function (error) {
+              alert('Âîçíèêëà îøèáêà: ' + error.message);
+            });
+        }
+    });
 }
 
 });

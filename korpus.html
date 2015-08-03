@@ -44,7 +44,7 @@
 					</ul>
 				</li>
 				<li><a href="raspoloj.html">расположение</a></li>
-				<li><a href="">Генплан</a></li>
+				<li><a class="fancybox" href="img/genplan.jpg">Генплан</a></li>
 				<li>
 					<a href="kvartiri.html">Квартиры</a>
 					<ul class="sub_menu">
@@ -71,10 +71,11 @@
 	</header>
 	<div class="content">
 		<div class="lists">
-			<div class="gen">
-				<span>Смотреть генплан</span>
-			</div>
-			
+			<a class="fancybox" href="img/genplan.jpg">
+				<div class="gen">
+					<div class="icon_gen">смотреть генплан</div>
+				</div>
+			</a>
 		</div>
 		<div id="layer1"></div>
 		<div class="icon icon1">
@@ -109,13 +110,23 @@
 			<span>2 <em>ж</em> </span><br>
 			корпус
 		</div>
-		<div class="icon icon9 child"></div>
-		<div class="icon icon10 child"></div>
-		<div class="icon icon11 park"></div>
-		<div class="icon icon12 park"></div>
-		<div class="icon icon13 ball"></div>
+		<div class="icon icon9 child">
+			<div class="small_desc">Детская площадка</div>
+		</div>
+		<div class="icon icon10 child">
+			<div class="small_desc">Детская площадка</div>
+		</div>
+		<div class="icon icon11 park">
+			<div class="small_desc">Парковка</div>
+		</div>
+		<div class="icon icon12 park">
+			<div class="small_desc">Парковка</div>
+		</div>
+		<div class="icon icon13 ball">
+			<div class="small_desc">Футбольная площадка</div>
+		</div>
 		<div class="container">
-<svg version="1.1" id="sloy1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-644 -144 1900 1080" enable-background="new 0 0 612 792" xml:space="preserve" preserveAspectRatio="xMinYMin slice" style="width: 100%; height: 100%;">
+<svg version="1.1" id="sloy1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-635 -144 1900 1080" enable-background="new 0 0 612 792" xml:space="preserve" preserveAspectRatio="xMinYMin slice" style="width: 100%; height: 100%;">
 			<image overflow="visible" width="1900" height="1080" xlink:href="img/bg6-2.jpg"  transform="matrix(1 0 0 1 -644 -144)">
 			</image>
 			<polyline fill="#fcd954" stroke="" stroke-miterlimit="10" points="-555,373 -214,37 -126,60 -103,237 -413,601 -500,578 "/>
@@ -168,7 +179,7 @@
 		<div class="f_timer">
 			<em>повышение цен через </em><big>15</big><em> дней</em>
 		</div>
-		<div class="f_news">
+		<div class="f_news" onclick="javascript:location.href='news.html'">
 			<div class="icon">Новости</div>
 			<span class="date">02/07/15</span>
 			<span class="name">Новый объем квартир В ЖК «Терлецкий парк»</span>
@@ -181,5 +192,17 @@
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/corpus.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a.fancybox").fancybox({
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}	
+			});
+		});
+	</script>
 </body>
 </html>

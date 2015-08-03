@@ -1,3 +1,5 @@
+var route = null;
+var to_coord = [55.761801,37.796598];
 ymaps.ready(function()
         {
                 var destinations = {
@@ -318,10 +320,34 @@ var myPlacemark1 = new ymaps.Placemark(destinations['Озерная ул., д.7'
 				$('.btn a').click(function()
   {
 	  
-    var x = $(this).attr('data-coord-x');
-    var y = $(this).attr('data-coord-y');
-    var coord = [x,y];
-    myMap.setCenter(coord, 16, {duration : 500});
   });
+    $('.routes div').click(function()
+    {
+          $('.routes div').removeClass('current-route');
+          $(this).addClass('current-route');
+          var x = $(this).attr('data-coord-x');
+          var y = $(this).attr('data-coord-y');
+          var r = $(this).attr('data-rout');
+          
+        if (r == 'router'){
+          if(route) {myMap.geoObjects.remove(route);}
+          ymaps.route(
+            [
+              [x,y],
+              to_coord
+            ]).then(function (router)
+            {
+                
+                route = router;
+                myMap.geoObjects.add(router);
+                var points = route.getWayPoints(),
+                lastPoint = points.getLength() - 1;
+                points.get(0).options.set('visible', false);
+                points.get(1).options.set('visible', false);
+            }, function (error) {
+              alert('Âîçíèêëà îøèáêà: ' + error.message);
+            });
+        }
+    });
 
 });

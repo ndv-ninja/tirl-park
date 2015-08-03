@@ -48,7 +48,7 @@
 					</ul>
 				</li>
 				<li><a href="raspoloj.html">расположение</a></li>
-				<li><a href="">Генплан</a></li>
+				<li><a class="fancybox" href="img/genplan.jpg">Генплан</a></li>
 				<li>
 					<a href="kvartiri.html">Квартиры</a>
 					<ul class="sub_menu">
@@ -377,7 +377,7 @@
 		<div class="f_timer">
 			<em>повышение цен через </em><big>15</big><em> дней</em>
 		</div>
-		<div class="f_news">
+		<div class="f_news" onclick="javascript:location.href='news.html'">
 			<div class="icon">Новости</div>
 			<span class="date">02/07/15</span>
 			<span class="name">Новый объем квартир В ЖК «Терлецкий парк»</span>
@@ -395,21 +395,16 @@
 	<script type="text/javascript" src="js/sort.js"></script>
 	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
 	<script type="text/javascript" src="js/slider_ui.js"></script>
-// 	<script>
-// 	$(document).ready(function() {
-// 		$('.irs-slider.from').mouseenter(function(event) {
-// 			$(this).siblings('.irs').find('.irs-from').addClass('hover')
-// 		}).mouseleave(function(event) {
-// 			$('.irs-slider.from').siblings('.irs').find('.irs-from').removeClass('hover')
-// 		});
-// 	});
-// 	$(document).ready(function() {
-// 	$('.irs-slider.to').mouseenter(function(event) {
-// 		$(this).siblings('.irs').find('.irs-to').addClass('hover')
-// 	}).mouseleave(function(event) {
-// 		$('.irs-slider.to').siblings('.irs').find('.irs-to').removeClass('hover')
-// 	});
-// });
-// 	</script>
+	<script>
+		$(document).ready(function() {
+			$("a.fancybox").fancybox({
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}	
+			});
+		});
+	</script>
 </body>
 </html>
