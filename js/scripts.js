@@ -28,7 +28,9 @@ $(document).ready(function() {
 	});
 	$('.slider_preim').slick({
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000
 	});
 	$('.accordion span').click(function(event) {
 		$(this).toggleClass('up');

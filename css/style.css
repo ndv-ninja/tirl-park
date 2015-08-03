@@ -665,6 +665,7 @@ ul.sub_menu > li {
 	z-index: 3;
 	width: 220px;
 }
+.slider_preim .slide {cursor: pointer;}
 .slider_preim_main .text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -1027,6 +1028,11 @@ ul.sub_menu > li {
 	left: 50%;
 	transform: translate(-50%);
 	-webkit-transform: translate(-50%);
+}
+.nejilie.parkin_main .content .title:after {
+	width: 355px;
+	height: 225px;
+	background: url(../img/shadow_park.png) center center no-repeat !important;
 }
 .nejilie div[id^="layer"] {
 	position: absolute;
@@ -1616,7 +1622,7 @@ svg polyline {
 	left: 58%;
 }
 .step #layer4 {
-	top: 23%;
+	top: 13%;
 	left: 82%;
 }
 .step div[id^="layer"] {
@@ -1847,7 +1853,7 @@ footer div {
 	overflow: hidden;
 }
 .f_timer {
-	width: 19%;
+	width: 17%;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 49px;
