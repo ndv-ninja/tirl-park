@@ -321,6 +321,15 @@ var myPlacemark1 = new ymaps.Placemark(destinations['Озерная ул., д.7'
   {
 	  
   });
+    $('.contacts .item .btn').click(function()
+  {
+      
+    var x = $(this).attr('data-coord-x');
+    var y = $(this).attr('data-coord-y');
+    console.log(x,y);
+    var coord = [x,y];
+    myMap.setCenter(coord, 16, {duration : 500});
+  });
     $('.routes div').click(function()
     {
           $('.routes div').removeClass('current-route');
