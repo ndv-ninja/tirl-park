@@ -86,6 +86,7 @@
 	.step_kishki .title a {left: -113px;}
 	.fon {width: 500px;}
 	ul.main_menu a {padding: 5px;}
+	.popup_webcam {height: 85%;}
 }
 @media screen and (max-width: 1906px) {
 	header li.hide1 {display: none;}

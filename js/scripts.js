@@ -100,8 +100,28 @@ $('.pag-prev').click(function(event) {
 function popup_out() {
 	$('.popup_overlay').hide();
 	$('#request').hide();
+	$('.popup_webcam').hide();
+	$('.popup_webcam').find('iframe').remove();
 }
 function popup_req() {
 	$('.popup_overlay').show();
 	$('#request').show();
+}
+
+function popup_webcam(url) {
+	$('.popup_webcam').find('iframe').remove();
+	$('.popup_webcam').append('<iframe class="active" id="web1" src="" frameborder="0"></iframe>');
+    $('iframe#web1').css({
+		width: '100%',
+		height: '100%'
+	});
+	var link1 = '';
+	var link2 = 'http://media.ndv.ru/static/14/cam_o7_cam2.html';
+	$('.popup_overlay').show();
+	$('.popup_webcam').addClass('activePopup');
+   	$('.popup_webcam').find('iframe#web1').attr('src', link2);
+	$('.activePopup').show();
+	$('.popup_webcam').click(function(event) {
+		$('iframe#web1').attr('src', link2).show();
+	});
 }
