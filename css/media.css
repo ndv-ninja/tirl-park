@@ -21,9 +21,12 @@
 	.about_block .scroll-pane {height: 57%;}
 	.raspoloj .scroll-pane {height: 53%;}
 	.nejilie .main_block .scroll-pane {height: 90%;}
-	.news-single .right {height: 83%;}
+	.news-single .right {height: 75%;}
 	.nejilie .content .title {margin-top: 9% !important;}
 	.ipoteka .ipot {margin: 3% auto 0 !important;}
+}
+@media screen and (min-height: 650px) {
+	.news-single .right {height: 70%;}
 }
 @media screen and (max-width: 1200px) {
 	.vzaim .text_content  {
@@ -39,7 +42,7 @@
 	.documents .scroll-pane.mCustomScrollbar {width: 43%; height: 50%;}
 	.nejilie .main_block {height: 50%; top: 62%;}
 	.nejilie .content .title {margin-top: 11%;}
-	.popup_preim .preim {margin: 0 6%;}
+	.popup_preim .preim {margin: 0 5%;}
 	.popup_preim .close_preim {top: 0;right: -4%;}
 	.popup_preim {width: 90%;}
 	.uchast .content .title {margin-top: 11%;}

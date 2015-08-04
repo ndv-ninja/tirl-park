@@ -999,7 +999,7 @@ ul.sub_menu > li {
 	position: absolute;
 	bottom: -3px;
 	left: 50%;
-	width: 120px;
+	width: 140px;
 	transform: translate(-50%);
 	-webkit-transform: translate(-50%);
 }
@@ -2043,7 +2043,7 @@ footer div big {font-size: 30px;}
 	position: absolute;
 }
 .news-single .left {float: left; position: relative;}
-.news-single .right {float: right; height: 100%; width: 70%;}
+.news-single .right {float: right; height: 90%; width: 70%;}
 .news-single .conts {
 	position: absolute;
 	top: 54%;
@@ -2252,7 +2252,7 @@ footer div big {font-size: 30px;}
 	margin-left: 50px;
 	width: 51%;
 	float: left;
-	height: 95%;
+	height: 90%;
 }
 .ipoteka .ipot {
 	width: 100%;
@@ -2265,7 +2265,8 @@ footer div big {font-size: 30px;}
 	margin-top: 3%;
 	float: left;
 	position: relative;
-	height: 79%;
+	height: 75%;
+	z-index: 2;
 }
 .ipoteka .content {overflow: hidden;}
 .ipoteka .mCustomScrollBox {padding: 0 !important;}
