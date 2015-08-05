@@ -109,19 +109,26 @@ function popup_req() {
 }
 
 function popup_webcam(url) {
+	var link1 = 'http://media.ndv.ru/static/14/cam_terletskiy_park.html';
+	var link2 = 'http://media.ndv.ru/static/14/cam_terletskiy_park_2.html';
+	$('.popup_overlay').show();
+	$('.popup_webcam').addClass('activePopup');
+	$('.activePopup').show();
+	
 	$('.popup_webcam').find('iframe').remove();
 	$('.popup_webcam').append('<iframe class="active" id="web1" src="" frameborder="0"></iframe>');
-    $('iframe#web1').css({
+    $('iframe').css({
 		width: '100%',
 		height: '100%'
 	});
-	var link1 = '';
-	var link2 = 'http://media.ndv.ru/static/14/cam_o7_cam2.html';
-	$('.popup_overlay').show();
-	$('.popup_webcam').addClass('activePopup');
-   	$('.popup_webcam').find('iframe#web1').attr('src', link2);
-	$('.activePopup').show();
-	$('.popup_webcam').click(function(event) {
-		$('iframe#web1').attr('src', link2).show();
+   	$('.popup_webcam').find('iframe#web1').attr('src', link1);
+	camTab();
+}
+function camTab() {
+	$('.popup_webcam .btn').click(function(event) {
+		var camUrl = $(this).attr('data-url');
+		$('.popup_webcam').find('iframe#web1').attr('src', camUrl);
+		$('.popup_webcam .btn').removeClass('active');
+		$(this).addClass('active');
 	});
 }

@@ -1415,6 +1415,7 @@ svg polyline {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .raspoloj .scroll-pane {
 	padding-left: 15px;
@@ -2433,4 +2434,22 @@ footer div big {font-size: 30px;}
 	background: -ms-linear-gradient(top,  #f2b713 0%,#f3be16 25%,#f3be16 25%,#f8d720 50%,#fae625 75%,#fef32a 100%);
 	background: linear-gradient(to bottom,  #f2b713 0%,#f3be16 25%,#f3be16 25%,#f8d720 50%,#fae625 75%,#fef32a 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b713', endColorstr='#fef32a',GradientType=0 );
+}
+.popup_webcam .btn {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 30px;
+	width: 100px;
+	height: 50px;
+	color: #9bc55a;
+	background: #fff;
+	text-align: center;
+	font-weight: 400;
+	line-height: 50px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.popup_webcam .btn.active {
+	color: #fff;
+	background: #9bc55a;
 }
