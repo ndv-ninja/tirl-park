@@ -118,8 +118,8 @@ function popup_webcam(url) {
 	$('.popup_webcam').find('iframe').remove();
 	$('.popup_webcam').append('<iframe class="active" id="web1" src="" frameborder="0"></iframe>');
     $('iframe').css({
-		width: '100%',
-		height: '100%'
+		width: '800px',
+		height: '610px'
 	});
    	$('.popup_webcam').find('iframe#web1').attr('src', link1);
 	camTab();
